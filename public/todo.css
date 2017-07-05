@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+button {
+    outline: none;
+}
+nav {
+    position: relative;
+    background: #18bb9c;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.nav-left {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: transLateY(-50%);
+}
+.nav-right {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: transLateY(-50%);
+}
+.todo-input {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.todo-input-text {
+    font-size: 18px;
+}
+input {
+    border: 1px #18bb9c solid;
+    width: 400px;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: transLateY(-50%);
+    box-shadow: 0px 0px 5px 3px #18bb9c;
+}
+.button-add {
+    height: 40px;
+    width: 60px;
+    position: relative;
+    top: 50%;
+    transform: transLateY(-50%);
+    left: 10px;
+    text-shadow: 3px 3px 3px #15a773;
+    box-shadow: 0px 0px 6px 2px #15a773;
+    background: #e3f0ea;
+    color: #121312;
+    font-size: 18px;
+    border-radius: 10px;
+}
+section {
+    /*outline: 1px red dashed;*/
+    position: relative;
+    border-top: 2px darkred solid;
+}
+.section-nav {
+    border-bottom: 2px darkred solid;
+    /*outline: 2px blue dashed;*/
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.section-nav-left {
+    /*outline: 1px red dashed;*/
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    text-align: center;
+}
+.section-nav-middle {
+    /*outline: 1px blue dashed;*/
+    display: inline-block;
+    position: absolute;
+    left: 70%;
+    width: 10%;
+    text-align: center;
+}
+.section-nav-right {
+    /*outline: 1px blueviolet dashed;*/
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    width: 15%;
+    text-align: center;
+}
+.section-container {
+    /*outline: 2px blue dashed;*/
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    line-height: 30px;
+    background: #dce8e3;
+}
+.section-container-todo {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.section-container-todo {
+    position: static;
+}
+.section-content {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+}
+.section-state {
+    width: 10%;
+    display: inline-block;
+    position: absolute;
+    left: 70%;
+    text-align: center;
+}
+.section-button {
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    text-align: center;
+}
+.page {
+    position: relative;
+    /*outline: 1px black dashed;*/
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.page button {
+    position: relative;
+    top: 50%;
+    transform: transLateY(-50%);
+}
+.done {
+    background: gray;
+}
+button {
+    cursor: pointer;
+}
+.button-done {
+    width: 50px;
+    height: 25px;
+    background: #13caa7;
+    border-radius: 8px;
+}
+.button-delete {
+    width: 50px;
+    height: 25px;
+    background: #d22028;
+    border-radius: 8px;
+}
+.page button {
+    width: 30px;
+    height: 30px;
+    background: #18bb9c;
+    border-radius: 50%;
+}
+.foo {
+    border: 1px blue dashed;
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+/* 弹窗样式 */
+.alert-main-one, .alert-main-two{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(143,27,15);
+    animation: 0.5s alertBg linear forwards;
+}
+@keyframes alertBg {
+    0% {
+        opacity: 0.5;
+        background: rgb(143,27,15);
+    }
+    100% {
+        opacity: 0.93;
+        background: rgb(143,27,15);
+    }
+}
+
+.alert-container {
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    animation: 0.5s alertContainer linear forwards;
+}
+@keyframes alertContainer {
+    0% {
+        transform: scale(0) translateY(-50%);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(0.5) translateY(-50%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) translateY(-50%);
+        opacity: 1;
+    }
+}
+
+.alert-title {
+    text-align: center;
+    font-size: 27px;
+    background: lightblue;
+    height: 50px;
+    line-height: 50px;
+}
+.alert-message {
+    text-align: center;
+    padding: 10px 5px;
+    background: white;
+    height: 150px;
+    line-height: 150px;
+    font-size: 22px;
+}
+.alert-control {
+    font-size: 0;
+    height: 50px;
+}
+.alert-button {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    border: 0;
+}
+.alert-button-two {
+    width: 50%;
+    height: 100%;
+    font-size: 22px;
+    border: 0;
+}
